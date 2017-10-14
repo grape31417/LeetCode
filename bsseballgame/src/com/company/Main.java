@@ -4,9 +4,11 @@ import java.math.BigDecimal;
 public class Main {
 
     public static void main(String[] args) {
-
+        Solution solution = new Solution();
     }
     class Solution {
+
+
         public  int calPoints(String[] ops) {
             int result=0;
             int lastsum=0;
