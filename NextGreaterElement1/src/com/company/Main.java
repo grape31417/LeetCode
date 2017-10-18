@@ -1,13 +1,15 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
     public static boolean test(int[]input1,int[]input2)
     {
-        Integer[] answer={-1,3,-1};
+        int[] answer={-1,3,-1};
         int[] result = nextGreaterElement(input1,input2);
         for(int z=0;z<result.length;z++)//檢查出來的結果
             System.out.printf("%d ",result[z]);
-        if(answer.equals(result))
+        if(Arrays.equals(answer,result)==true)
             return true;
         return false;
 
